@@ -1,6 +1,6 @@
 # Django-Hackathon-Project
 #
-# Usage:
+##Usage:
 #### Clone the repository:
 ```
 $ git clone https://github.com/adarsh217/Django-Hackathon-Project.git
