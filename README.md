@@ -5,9 +5,9 @@
 ```
 $ git clone https://github.com/adarsh217/Django-Hackathon-Project.git
 ```
-```
+
 #### Extract venv.zip to the Django-Hackathon-Project directory:
-```
+
 
 #### Install Dependencies :
 ```
