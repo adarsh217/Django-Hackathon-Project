@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hackathon Manager</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Hackathon Manager</h1>
+      <h2 class="subtitle">Create, view, and submit hackathon entries.</h2>
+
+      <div class="columns">
+        <div class="column">
+          <h3 class="subtitle is-3">Create Hackathon</h3>
+          <form id="create-hackathon-form">
+            <div class="field">
+              <label class="label">Hackathon Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Enter hackathon name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Hackathon Description</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Enter hackathon description" required></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Start Date</label>
+              <div class="control">
+                <input class="input" type="date" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">End Date</label>
+              <div class="control">
+                <input class="input" type="date" required>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link" type="submit">Create Hackathon</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="column">
+          <h3 class="subtitle is-3">View Hackathons</h3>
+          <div id="hackathon-list">
+            <table class="table is-striped is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Loading...</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hackathon-entry-section" style="display: none;">
+    <div class="container">
+      <h3 class="subtitle is-3">Submit Entry</h3>
+      <div id="hackathon-entry-form-container">
+        <p>Loading form...</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="C:\Users\Zarathos 07\PycharmProjects\hackathon\hackathon\static\js\app.js"></script>
+</body>
+</html>
